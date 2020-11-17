@@ -408,6 +408,7 @@ template {
   width: 65px;
   height: 100%;
   background-color: #EC1F46;
+  border: none;
 }
 
 .user {
