@@ -10,6 +10,22 @@ body {
   background-color: #F5FAFE;
 }
 
+input::-moz-placeholder {
+  color: #BDBDBD;
+}
+
+input::-moz-placeholder {
+  color: #BDBDBD;
+}
+
+input:-moz-placeholder {
+  color: #BDBDBD;
+}
+
+input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
 .container {
   max-width: 1110px;
   margin: auto;
@@ -441,7 +457,6 @@ template {
   border: none;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
 }
 
 .search__button {
@@ -595,6 +610,12 @@ template {
   line-height: 18px;
 }
 
+.rating__maxcounter {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 18px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -662,6 +683,9 @@ template {
     height: 1px;
     background-color: #333333;
   }
+  .hotel {
+    padding-top: 5px;
+  }
   .hotel-info__text {
     width: 100%;
   }
@@ -690,8 +714,8 @@ template {
             justify-content: space-between;
   }
   .stars {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
   }
 }
 
