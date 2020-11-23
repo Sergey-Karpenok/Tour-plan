@@ -9,4 +9,10 @@ var mySwiper = new Swiper('.swiper-container', {
         prevEl: '.slider-button--prev',
     },
 
+    // KEybord on
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
+
 })
