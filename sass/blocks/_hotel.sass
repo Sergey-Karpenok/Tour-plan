@@ -28,7 +28,10 @@
   &-greed
     display: flex
     justify-content: space-between
-    align-items: flex-start
+  &-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 .stars
   flex-basis: 100%
 .offer
@@ -97,6 +100,7 @@
       right: 18px
       background-image: url(../img/arrow-next.svg)
 .booking
+  font-family: 'Nunito', sans-serif
   border-radius: 8px
   width: 350px
   max-height: 210px
@@ -162,3 +166,7 @@
     background-color: $primary
     color: $light
     cursor: pointer
+.map
+  width: 347px
+  height: 213px
+  border-radius: 10px
