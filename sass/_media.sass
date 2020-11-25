@@ -8,7 +8,8 @@
       height: 100%
       width: 100%
 @media ( max-width: 992px)
-  .container
+  .container,
+  .newsletter-wrapper
     max-width: 700px
   .logo
     width: 132px
@@ -28,6 +29,7 @@
     &__input
       width: 340px
   .hotel
+    padding-bottom: 60px
     &-greed
       flex-direction: column
     &__slider
@@ -66,6 +68,7 @@
         background-color: $text-color
   .hotel
     padding-top: 5px
+    padding-bottom: 40px
     &-info
       &__text
         width: 100%
@@ -94,7 +97,20 @@
     width: 100%
   #map
     width: 100%
-
+  .newsletter
+    &-wrapper
+      flex-direction: column
+      align-items: start
+      max-width: 576px
+      width: 92%
+    &-title
+      font-weight: 300
+      font-size: 24px
+      line-height: 30px
+      &__strong
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
 @media ( max-width: 480px )
   .logo
     width: 99px
@@ -103,3 +119,10 @@
   .hotel
     &__slider
       margin-bottom: 20px
+  .subscribe
+    width: 100%
+  .newsletter
+    padding: 76px 0 83px 0
+    &__title
+      margin: 0
+      margin-bottom: 37px
