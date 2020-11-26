@@ -29,9 +29,9 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     },
 
     // KEybord on
-    keyboard: {
-        enabled: true,
-        onlyInViewport: false,
-    },
+    // keyboard: {
+    //     enabled: true,
+    //     onlyInViewport: false,
+    // },
 
 })
