@@ -536,7 +536,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .hotel-info__offer {
@@ -818,11 +818,6 @@ template {
 .map {
   width: 347px;
   height: 213px;
-}
-
-#map {
-  width: 347px;
-  height: 213px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -977,7 +972,7 @@ template {
   .booking {
     width: 340px;
   }
-  #map {
+  .map {
     width: 340px;
   }
 }
@@ -1064,7 +1059,7 @@ template {
   .booking {
     width: 100%;
   }
-  #map {
+  .map {
     width: 100%;
   }
   .newsletter-wrapper {
@@ -1099,6 +1094,9 @@ template {
   }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .booking {
+    padding: 20px;
   }
   .subscribe {
     width: 100%;
