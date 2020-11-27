@@ -1219,6 +1219,10 @@ template {
   .reviews-slider__item {
     max-width: 580px;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1232,7 +1236,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
