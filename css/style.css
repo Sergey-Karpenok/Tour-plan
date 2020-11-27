@@ -522,7 +522,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 13px;
   padding-bottom: 70px;
 }
 
@@ -545,7 +545,7 @@ template {
 }
 
 .hotel-info__name {
-  margin-top: 4px;
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 
@@ -650,8 +650,17 @@ template {
 }
 
 .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  margin-bottom: 5px;
+}
+
+.stars-img {
+  margin-left: 4px;
+  width: 6px;
 }
 
 .offer {
@@ -860,6 +869,7 @@ template {
 }
 
 .newsletter-title {
+  margin: 0;
   color: #FFFFFF;
   font-style: normal;
   font-weight: 300;
@@ -971,7 +981,7 @@ template {
   content: '';
   position: absolute;
   z-index: 55;
-  top: 50%;
+  top: 44%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -985,12 +995,12 @@ template {
 }
 
 .reviews-slider__button--prev {
-  left: 0px;
+  left: 17px;
   background-image: url(../img/arrow-left.svg);
 }
 
 .reviews-slider__button--next {
-  right: 0px;
+  right: 17px;
   background-image: url(../img/arrow-right.svg);
 }
 
@@ -1117,7 +1127,7 @@ template {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .container {
     max-width: 576px;
     width: 92%;
@@ -1251,6 +1261,9 @@ template {
 }
 
 @media (max-width: 480px) {
+  .navbar-top {
+    height: 70px;
+  }
   .logo {
     width: 99px;
   }
@@ -1258,10 +1271,17 @@ template {
     margin-bottom: 20px;
   }
   .hotel-slider {
-    height: 250px;
+    height: 179px;
+  }
+  .hotel-right {
+    min-height: auto;
   }
   .booking {
     padding: 20px;
+    margin-bottom: 20px;
+  }
+  .map {
+    height: 173px;
   }
   .subscribe {
     width: 100%;
@@ -1272,6 +1292,17 @@ template {
   .newsletter__title {
     margin: 0;
     margin-bottom: 37px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    width: 245px;
+    margin: 0 auto 40px;
+  }
+  .reviews-slider__text {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
