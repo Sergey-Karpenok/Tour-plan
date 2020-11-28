@@ -10,19 +10,43 @@ body {
   background-color: #F5FAFE;
 }
 
-input::-moz-placeholder {
-  color: #BDBDBD;
-}
-
-input::-moz-placeholder {
-  color: #BDBDBD;
-}
-
-input:-moz-placeholder {
+input::-webkit-input-placeholder {
   color: #BDBDBD;
 }
 
 input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+input::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+input::placeholder {
+  color: #BDBDBD;
+}
+
+input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+input::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+input::placeholder {
+  color: #BDBDBD;
+}
+
+input:-placeholder {
+  color: #BDBDBD;
+}
+
+input:input-placeholder {
   color: #BDBDBD;
 }
 
@@ -977,6 +1001,19 @@ template {
   background-repeat: no-repeat;
 }
 
+.reviews-slider__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.reviews-slider__star {
+  margin-left: 2px;
+}
+
 .reviews-slider__button {
   content: '';
   position: absolute;
@@ -1041,7 +1078,6 @@ template {
   font-weight: normal;
   font-size: 10px;
   line-height: 13px;
-  margin-bottom: 4px;
 }
 
 .reviews-slider__text {
@@ -1234,6 +1270,13 @@ template {
     width: 340px;
     height: 230px;
   }
+  .card__title {
+    width: 150px;
+  }
+  .activities {
+    padding-top: 60px;
+    padding-bottom: 78px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1364,12 +1407,15 @@ template {
     margin-right: -65px;
   }
   .reviews__title {
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 30px;
     line-height: 38px;
   }
   .activities {
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
   }
   .card {
     width: 48%;
@@ -1383,6 +1429,9 @@ template {
   }
   .logo {
     width: 99px;
+  }
+  .hotel-info {
+    margin-bottom: 38px;
   }
   .hotel__slider {
     margin-bottom: 20px;
@@ -1419,11 +1468,20 @@ template {
     margin: 0 auto 40px;
   }
   .reviews-slider__text {
-    width: 90%;
+    max-width: 215px;
+  }
+  .reviews-slider__button {
+    top: 22px;
+  }
+  .reviews-slider__button--prev {
+    left: 41%;
+  }
+  .reviews-slider__button--next {
+    right: 47%;
   }
   .activities {
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
   }
   .activities__title {
     font-size: 18px;

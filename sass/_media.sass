@@ -62,6 +62,11 @@
   .card
     width: 340px
     height: 230px
+    &__title
+      width: 150px
+  .activities
+    padding-top: 60px
+    padding-bottom: 78px
 @media ( max-width: 767px )
   .container
     max-width: 576px
@@ -147,11 +152,14 @@
           transform: translate(50%, 0)
           margin-right: -65px
     &__title
+      width: 430px
+      margin-left: auto
+      margin-right: auto
       font-size: 30px
       line-height: 38px
   .activities
     padding-top: 40px
-    padding-bottom: 60px
+    padding-bottom: 50px
   .card
     width: 48%
     height: 255px
@@ -162,6 +170,8 @@
   .logo
     width: 99px
   .hotel
+    &-info
+      margin-bottom: 38px
     &__slider
       margin-bottom: 20px
     &-slider
@@ -190,10 +200,16 @@
       margin: 0 auto 40px
     &-slider
       &__text
-        width: 90%
+        max-width: 215px
+      &__button
+        top: 22px
+        &--prev
+          left: 41%
+        &--next
+          right: 47%
   .activities
     padding-top: 40px
-    padding-bottom: 60px
+    padding-bottom: 40px
     &__title
       font-size: 18px
       line-height: 23px
