@@ -12,6 +12,9 @@
   .card
     width: 230px
     height: 230px
+  .footer
+    &__input
+      flex-basis: 100%
 @media ( max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -67,6 +70,38 @@
   .activities
     padding-top: 60px
     padding-bottom: 78px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+      width: 104px
+      height: 120px
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__information
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+
+    &__contacts
+      &-details
+        grid-row: 3 / 4
+        grid-column: span 5
+      &-form
+        grid-column: span 5
+    &__input
+      flex-basis: 49%
+    &__disclaimer
+      grid-column: span 5
 @media ( max-width: 767px )
   .container
     max-width: 576px
@@ -136,6 +171,7 @@
         font-size: 30px
         line-height: 38px
   .reviews
+    padding-bottom: 60px
     &-slider
       &__item
         padding: 0 30px 30px
@@ -163,6 +199,9 @@
   .card
     width: 48%
     height: 255px
+  .footer
+    &__input
+      flex-basis: 100%
 @media ( max-width: 480px )
   .navbar
     &-top
@@ -193,6 +232,7 @@
       font-size: 20px
       line-height: 25px
   .reviews
+    padding-bottom: 50px
     &__title
       font-size: 18px
       line-height: 23px
@@ -200,13 +240,13 @@
       margin: 0 auto 40px
     &-slider
       &__text
-        max-width: 215px
+        text-align: left
       &__button
-        top: 22px
+        top: 30px
         &--prev
           left: 41%
         &--next
-          right: 47%
+          right: 41%
   .activities
     padding-top: 40px
     padding-bottom: 40px
@@ -216,3 +256,41 @@
       margin-bottom: 36px
   .card
     width: 100%
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-column: 1
+      grid-row: 1
+    &__social
+      &-network
+        grid-column: 1
+        grid-row: 2
+    &__categories
+      grid-column: 1
+      grid-row: 3
+    &__information
+      grid-column: 1
+      grid-row: 4
+    &__legal
+      grid-column: 1
+      grid-row: 5
+      justify-self: start
+
+    &__contacts
+      &-details
+        grid-column: 1
+        grid-row: 6
+      &-form
+        grid-column: 1
+        grid-row: 7
+    &__disclaimer
+      grid-column: 1
+      grid-row: 8
+      flex-wrap: wrap
+    &__ul--inline
+      margin-top: 30px
+      margin-bottom: 10px
+    &__pay
+      grid-column: 1
+      grid-row: 9
