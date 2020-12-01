@@ -73,8 +73,6 @@
   .card
     width: 340px
     height: 255px
-    &__title
-      width: 150px
   .activities
     padding-top: 60px
     padding-bottom: 50px
@@ -218,6 +216,16 @@
     width: 48%
     height: 255px
   .footer
+    &__categories
+      grid-column: 1 / 6
+    &__information
+       grid-column: 1 / 6
+    &__legal
+       grid-column: 1 / 6
+       justify-self: start
+    &__details
+      grid-column: 1 / 6
+      grid-row: 5 / 6
     &__input
       flex-basis: 100%
     &__disclaimer
@@ -280,15 +288,14 @@
       line-height: 23px
       margin-bottom: 36px
   .card
-    width: 96%
+    width: 100%
   .footer
     &-wrapper
       grid-template-columns: 1fr
-      grid-row-gap: 20px
+      grid-row-gap: 30px
     &__logo
       grid-column: 1
       grid-row: 1
-      padding-bottom: 30px
     &__social
       &-network
         display: flex
@@ -296,6 +303,7 @@
         grid-column: 1
         grid-row: 2
     &__title
+      margin-bottom: 15px
       &--inline
         flex-basis: 100%
         margin-bottom: 24px
@@ -310,6 +318,9 @@
       grid-column: 1
       grid-row: 3
       justify-self: start
+    &__icon
+      &-wrapper
+        min-width: 30px
 
     &__contacts
       &-wrapper
@@ -318,6 +329,7 @@
         grid-column: 1
         grid-row: 6
         margin-bottom: 5px
+        padding-right: 20px
       &-form
         grid-column: 1
         grid-row: 7 / 8
