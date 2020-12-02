@@ -468,6 +468,10 @@ template {
   font-weight: bold;
 }
 
+.navbar-menu__item--mobile--visible {
+  display: none;
+}
+
 .logo__image {
   width: 177px;
 }
@@ -1314,6 +1318,7 @@ template {
   padding: 0;
   list-style: none;
   color: #BDBDBD;
+  margin: 0;
 }
 
 .footer__ul--inline {
@@ -1590,7 +1595,6 @@ template {
   }
   .footer__contacts-form {
     grid-column: span 6;
-    margin-top: -17px;
     width: 90%;
   }
   .footer__input {
@@ -1621,15 +1625,27 @@ template {
     max-width: 576px;
     width: 92%;
   }
+  .navbar__search--mobile--hiden, .navbar__user--mobile--hiden {
+    display: none;
+  }
+  .navbar__search--mobile--visible {
+    margin-bottom: 37px;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .navbar--mobile--fixed {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 99;
-  }
-  .navbar__search, .navbar__user {
-    display: none;
   }
   .navbar-bottom {
     display: none;
@@ -1647,9 +1663,22 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 31px;
+    padding-bottom: 0;
   }
   .navbar-menu__item {
     padding-bottom: 20px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .user__name--light {
+    color: #FFFFFF;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 27px;
   }
   .menu-button {
     display: -webkit-box;
@@ -1828,7 +1857,7 @@ template {
 
 @media (max-width: 480px) {
   .navbar-top {
-    height: 70px;
+    height: 78px;
   }
   .logo {
     width: 99px;
@@ -1964,8 +1993,8 @@ template {
     grid-column: 1;
     -ms-grid-row: 6;
     grid-row: 6;
-    margin-bottom: 5px;
     padding-right: 20px;
+    margin-top: 10px;
   }
   .footer__contacts-form {
     -ms-grid-column: 1;
@@ -1981,7 +2010,7 @@ template {
     grid-row: 8;
   }
   .footer__ul--inline {
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 10px;
   }
   .footer__pay {
@@ -1994,7 +2023,7 @@ template {
         align-self: auto;
     -ms-grid-column-align: auto;
         justify-self: auto;
-    margin-top: -15px;
+    margin-top: -55px;
   }
   .footer__info {
     -webkit-box-ordinal-group: 0;
