@@ -439,12 +439,12 @@
                 <!-- footer__contact-details -->
                 <div class="footer__contacts-form">
                     <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-                    <form class="footer__contacts__form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name*">
-                        <input type="text" class="input footer__input" placeholder="Phone Number*">
-                        <textarea cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
+                    <form action="send.php" method="POST" class="footer__contacts__form">
+                        <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*">
+                        <input name="phone" type="text" class="input footer__input" placeholder="Phone Number*">
+                        <textarea name="message" type="text" class="footer__message" placeholder="Message"></textarea>
                         <div class="footer__contacts-wrapper">
-                            <button class="button footer__button">Send</button>
+                            <button class="button footer__button" type="submit">Send</button>
                             <span class="footer__info">* Required Fields</span>
                         </div>
                     </form>
