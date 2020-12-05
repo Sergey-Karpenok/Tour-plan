@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -312,25 +314,25 @@
                 <div class="card activities__card">
                     <img src="img/activities-1.jpg" alt="The curious corner of chamarel" class="card__image">
                     <h3 class="card__title">The curious corner<br> of chamarel</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <!-- card -->
                 <div class="card activities__card">
                     <img src="img/activities-2.jpg" alt="Gymkhana club golf course" class="card__image">
                     <h3 class="card__title">Gymkhana club golf<br> course</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <!-- card -->
                 <div class="card activities__card">
                     <img src="img/activities-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
                     <h3 class="card__title">Tamarind falls hiking<br> trip - full day</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <!-- card -->
                 <div class="card activities__card">
                     <img src="img/activities-4.jpg" alt="The blue marine discovery quest" class="card__image">
                     <h3 class="card__title">The blue marine discovery quest</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <!-- card -->
             </div>
@@ -400,9 +402,23 @@
                 <div class="footer__social-network">
                     <h3 class="footer__title footer__title--inline">Social Network</h3>
                     <div class="footer__social-links">
-                        <a href="#" class="footer__link"><img src="img/fb.svg" alt="facebook"></a>
-                        <a href="#" class="footer__link"><img src="img/yt.svg" alt="youtube"></a>
-                        <a href="#" class="footer__link"><img src="img/inst.svg" alt="instagram"></a>
+                        <a target="_blank" href="https://ru-ru.facebook.com/" class="footer__link">
+                            <svg class="icon">
+                              <use xlink:href="img/sprite.svg#fb"></use>
+                            </svg>
+                        </a>
+                        <a target="_blank" href="https://www.youtube.com/" class="footer__link">
+                            <svg class="icon">
+                              <use xlink:href="img/sprite.svg#yt"></use>
+                          </svg>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/" class="footer__link">
+                            <svg class="icon">
+                              <svg class="icon">
+                              <use xlink:href="img/sprite.svg#inst"></use>
+                          </svg>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <!-- footer__social-network -->
@@ -440,13 +456,14 @@
                             <div class="footer__icon-wrapper">
                                 <img src="img/phone-ico.svg" alt="icon: phone" class="footer_icon">
                             </div>
-                            Tel (business hours) : 269 1500<br> Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br> Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                            <p class="footer__ul-text">Tel (business hours) : <a class="footer__link" href="tel:269 1500">269 1500 </a> <br> Tel (hotline) Monday - Saturday: <a class="footer__link" href="tel:269 1500">52-56-61-38</a> (08:00 am – 20:00 pm)<br> Tel (hotline) Sunday:
+                                <a class="footer__link" href="tel:269 1500">52-56-61-38</a>(08:00 am – 14:00 pm)</p>
                         </li>
                         <li class="footer__item footer__item--mb-4">
                             <div class="footer__icon-wrapper">
                                 <img src="img/email-ico.svg" alt="icon: email" class="footer__ico">
                             </div>
-                            cherly.lawson@example.com
+                            <a class="footer__link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>

@@ -17,6 +17,10 @@ $body = "
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message<br>
+";
+
+$bodySubscribe = "
+<h2>Новое письмо</h2>
 <b>Отзыв:</b><br>$subscribe
 ";
 
@@ -41,9 +45,17 @@ try {
     $mail->addAddress('shamanito@rambler.ru');  
     
 // Отправка сообщения
-$mail->isHTML(true);
-$mail->Subject = $title;
-$mail->Body = $body;    
+if ($name == true) {
+  $mail->isHTML(true);
+  $mail->Subject = $title;
+  $mail->Body = $body;
+}
+else {
+  $mail->isHTML(true);
+  $mail->Subject = $title;
+  $mail->Body = $bodySubscribe;
+}
+    
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 

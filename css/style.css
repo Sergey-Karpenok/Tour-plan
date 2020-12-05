@@ -69,6 +69,16 @@ img {
   max-width: 100%;
 }
 
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: #BDBDBD;
+}
+
+.icon:hover {
+  fill: red;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1321,6 +1331,10 @@ template {
   margin: 0;
 }
 
+.footer__ul-text {
+  margin: 0;
+}
+
 .footer__ul--inline {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1450,6 +1464,8 @@ template {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .modal__dialog {
@@ -1467,6 +1483,8 @@ template {
   color: #FFFFFF;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .modal--visible {
