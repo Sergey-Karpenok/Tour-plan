@@ -81,7 +81,10 @@ $(document).ready(function() {
                     required: true,
                     minlength: 2
                 },
-                phone: "required",
+                phone: {
+                    required: true,
+                    minlength: 18
+                },
                 email: {
                     required: true,
                     email: true
@@ -96,7 +99,10 @@ $(document).ready(function() {
                     required: "Please specify your name",
                     minlength: "Name cannot be less than 2 letters"
                 },
-                phone: "Please enter your phone",
+                phone: {
+                    require:"Please enter your phone",
+                    minlength: "The phone must match the format"
+                },
                 email: {
                     required: "Please enter your Email",
                     email: "Your email address must be in the format of name@domain.com"
@@ -128,6 +134,6 @@ $(document).ready(function() {
         });
     
 
-        $('.phone').mask('+0 (000) 000 00 00', {placeholder: "+_ (___) ___ __ __"});
+        $('.phone').mask('+7 (000) 000 00 00', {placeholder: "+7 (___) ___ __ __"});
 
 });
