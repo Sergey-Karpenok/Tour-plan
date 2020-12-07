@@ -42,6 +42,7 @@ $(document).ready(function() {
         document.querySelector(".navbar-bottom").classList.toggle('navbar-bottom--visible');
     })
 
+    // Модальное окно  
     var modalButton = $("[data-toggle=modal]");
     var modalClose = $("[data-toggle=close]");
 
@@ -61,7 +62,7 @@ $(document).ready(function() {
         $(".modal__dialog").removeClass("modal--visible");
     });
 
-
+    // Закрывает модальное окно по кнопке ESC
     //keyup() - работает при отпускании нажатой кнопки
     $(document).keyup(function(esc) {
         if (esc.which == 27) {
@@ -70,5 +71,44 @@ $(document).ready(function() {
         }
     });
 
+    // Обработчик валидности форм
+
+    $(".form").each(function() {
+        $(this).validate({
+            errorClass: "invalid",
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                subscribe: {
+                    // required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Please specify your name",
+                    minlength: "Name cannot be less than 2 letters"
+                },
+                phone: "Please enter your phone",
+                email: {
+                    required: "Please enter your Email",
+                    email: "Your email address must be in the format of name@domain.com"
+                },
+                subscribe: {
+                    required: "Please enter your Email",
+                    email: "Your email address must be in the format of name@domain.com"
+                }
+            }
+        });
+    });
+
+    // $('.phone_with_ddd').mask('(+7) 000-00-00');
 
 });

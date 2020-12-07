@@ -14,7 +14,8 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
+      &-wrapper
+        flex-basis: 100%
 @media ( max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -108,7 +109,8 @@
 
         width: 90%
     &__input
-      flex-basis: 47%
+      &-wrapper
+        flex-basis: 47%
     &__ul--inline
       margin-top: 25px
     &__disclaimer
@@ -277,7 +279,8 @@
       grid-column: 1 / 6
       grid-row: 6 / 7
     &__input
-      flex-basis: 100%
+      &-wrapper
+        flex-basis: 100%
     &__disclaimer
       grid-column: span 4
       justify-self: flex-start
@@ -412,3 +415,23 @@
     &__info
       order: -1
       margin-bottom: 15px
+@media ( min-width: 568px ) and (max-width: 736px)
+  .modal
+    &__dialog
+      width: 300px
+      min-height: 315px
+      padding: 10px 20px
+    &__message
+      height: 70px
+      margin-bottom: 20px
+      padding: 15px
+    &__input
+      min-height: 30px
+      margin-bottom: 10px
+    &__title
+      margin-bottom: 10px
+      font-size: 16px
+    &__close
+      width: 12px
+      top: 10px
+      right: 10px
