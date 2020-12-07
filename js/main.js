@@ -87,7 +87,7 @@ $(document).ready(function() {
                     email: true
                 },
                 subscribe: {
-                    // required: true,
+                    required: true,
                     email: true
                 }
             },
@@ -109,6 +109,25 @@ $(document).ready(function() {
         });
     });
 
-    // $('.phone_with_ddd').mask('(+7) 000-00-00');
+
+
+    $(".newsletter__subscribe").validate({
+            errorClass: "invalid-subscribe",
+            rules: {
+                subscribe: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                subscribe: {
+                    required: "Please enter your Email",
+                    email: "Your email address must be in the format of name@domain.com"
+                }
+            }
+        });
+    
+
+        $('.phone').mask('+0 (000) 000 00 00', {placeholder: "+_ (___) ___ __ __"});
 
 });

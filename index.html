@@ -212,7 +212,9 @@
             </h2>
             <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
 
-                <input name="subscribe" type="text" class="subscribe__input" placeholder="Your email address" required>
+                <div class="subscribe__input-wrapper">
+                    <input name="subscribe" type="text" class="subscribe__input" placeholder="Your email address" required>
+                </div>
                 <button class="subscribe__button" type="submit">
                       Send
                     </button>
@@ -478,7 +480,7 @@
                             <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*">
                         </div>
                         <div class="footer__input-wrapper">
-                            <input name="phone" type="text" class="input footer__input" placeholder="Phone Number*">
+                            <input name="phone" type="text" class="input footer__input phone" placeholder="Phone Number*">
                         </div>
                         <textarea name="message" type="text" class="footer__message" placeholder="Message"></textarea>
                         <div class="footer__contacts-wrapper">
@@ -518,7 +520,7 @@
             <h3 class="modal__title">Send us a message</h3>
             <form action="send.php" method="POST" class="modal__contacts__form form">
                 <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*">
-                <input name="phone" type="text" class="input modal__input phone_with_ddd" placeholder="Phone Number*">
+                <input name="phone" type="text" class="input modal__input phone" placeholder="Phone Number*">
                 <input name="email" type="text" class="input modal__input" placeholder="Email*">
                 <textarea name="message" type="text" class="modal__message" placeholder="Message"></textarea>
                 <div class="modal__contacts-wrapper">

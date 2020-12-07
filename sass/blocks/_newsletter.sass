@@ -38,13 +38,16 @@
       text-transform: uppercase
 .subscribe
   position: relative
+  display: flex
   width: 350px
-  min-height: 65px
+  min-height: 55px
   border-radius: 4px
   overflow: hidden
+  left: 0
+
   &__input
     position: absolute
-    width: 90%
+    width: 100%
     height: 100%
     border: none
     padding-left: 33px
@@ -53,17 +56,20 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
+    
 
   &__button
     position: absolute
+    z-index: 5
     right: 0
+    height: 100%
     color: $light
     background-color: $primary
     border: none
     min-width: 65px
-    height: 100%
     font-style: normal
     font-weight: bold
     font-size: 12px
     line-height: 15px
     cursor: pointer
+  
