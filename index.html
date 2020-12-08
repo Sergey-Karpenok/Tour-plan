@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
@@ -18,7 +19,7 @@
     <header class="navbar navbar--mobile--fixed">
         <div class="container">
             <div class="navbar-top">
-                <a href="" class="logo">
+                <a href="#" class="logo" data-aos="zoom-in-right">
                     <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
                 </a>
                 <form action="#" class="search navbar__search navbar__search--mobile--hiden">
@@ -316,25 +317,33 @@
         <div class="container">
             <h2 class="activities__title">Other Activities</h2>
             <div class="activities-wrapper">
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                     <img src="img/activities-1.jpg" alt="The curious corner of chamarel" class="card__image">
                     <h3 class="card__title">The curious corner<br> of chamarel</h3>
                     <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <!-- card -->
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                     <img src="img/activities-2.jpg" alt="Gymkhana club golf course" class="card__image">
                     <h3 class="card__title">Gymkhana club golf<br> course</h3>
                     <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <!-- card -->
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                     <img src="img/activities-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
                     <h3 class="card__title">Tamarind falls hiking<br> trip - full day</h3>
                     <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <!-- card -->
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                     <img src="img/activities-4.jpg" alt="The blue marine discovery quest" class="card__image">
                     <h3 class="card__title">The blue marine discovery quest</h3>
                     <button data-toggle="modal" class="card__button">Book Now</button>
@@ -535,6 +544,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 
