@@ -76,7 +76,7 @@ img {
 }
 
 .icon:hover {
-  fill: red;
+  fill: #EC1F46;
 }
 
 .invalid {
@@ -1507,7 +1507,7 @@ template {
           transform: translate(-50%, -50%);
   z-index: 101;
   width: 478px;
-  min-height: 487px;
+  height: auto;
   padding: 33px 88px;
   background-color: #0A223D;
   border-radius: 8px;
@@ -2239,17 +2239,20 @@ template {
 @media (min-width: 568px) and (max-width: 736px) {
   .modal__dialog {
     width: 300px;
-    height: 315px;
+    min-height: 310px;
+    height: 90%;
     padding: 10px 20px;
     overflow-y: scroll;
   }
   .modal__message {
     height: 70px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
     padding: 15px;
   }
   .modal__input {
     min-height: 30px;
+    margin: 0;
     margin-bottom: 10px;
   }
   .modal__title {
@@ -2260,6 +2263,11 @@ template {
     width: 12px;
     top: 10px;
     right: 10px;
+  }
+  .modal__button {
+    padding: 13px;
+    width: 140px;
+    height: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
