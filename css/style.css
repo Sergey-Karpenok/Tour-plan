@@ -1500,14 +1500,9 @@ template {
 }
 
 .modal__dialog {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 101;
-  width: 478px;
-  height: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
   padding: 33px 88px;
   background-color: #0A223D;
   border-radius: 8px;
@@ -1516,6 +1511,18 @@ template {
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+}
+
+.modal__dialog-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 101;
+  width: 478px;
+  height: auto;
+  visibility: hidden;
 }
 
 .modal--visible {
@@ -2217,7 +2224,10 @@ template {
   .modal__dialog {
     padding: 20px;
     width: 315px;
-    min-height: 500px;
+  }
+  .modal__dialog-wrapper {
+    max-width: 320px;
+    width: auto;
   }
   .modal__contacts-wrapper {
     -webkit-box-orient: vertical;
@@ -2236,12 +2246,18 @@ template {
   }
 }
 
-@media (min-width: 568px) and (max-width: 736px) {
+@media (min-width: 567px) and (max-width: 736px) {
   .modal__dialog {
-    width: 300px;
-    min-height: 310px;
-    height: 90%;
+    height: 100%;
     padding: 10px 20px;
+    overflow-y: scroll;
+  }
+  .modal__dialog-wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 320px;
+    width: auto;
+    max-height: 100%;
     overflow-y: scroll;
   }
   .modal__message {

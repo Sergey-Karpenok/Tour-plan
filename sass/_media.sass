@@ -408,21 +408,28 @@
     &__dialog
       padding: 20px
       width: 315px
-      min-height: 500px
+      &-wrapper
+        max-width: 320px
+        width: auto
     &__contacts-wrapper
       flex-direction: column
       align-items: flex-start
     &__info
       order: -1
       margin-bottom: 15px
-@media ( min-width: 568px ) and (max-width: 736px)
+@media ( min-width: 567px ) and (max-width: 736px)
   .modal
     &__dialog
-      width: 300px
-      min-height: 310px
-      height: 90%
+      height: 100%
       padding: 10px 20px
       overflow-y: scroll
+      &-wrapper
+        padding-top: 10px
+        padding-bottom: 10px
+        max-width: 320px
+        width: auto
+        max-height: 100%
+        overflow-y: scroll
     &__message
       height: 70px
       margin-top: 0
