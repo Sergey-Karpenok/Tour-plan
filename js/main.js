@@ -100,8 +100,8 @@ $(document).ready(function() {
                     minlength: "Name cannot be less than 2 letters"
                 },
                 phone: {
-                    require:"Please enter your phone",
-                    minlength: "The phone must match the format"
+                    require: "Please enter your phone",
+                    minlength: "The phone must match the format +7 (999) 999-99-99"
                 },
                 email: {
                     required: "Please enter your Email",
@@ -118,26 +118,26 @@ $(document).ready(function() {
 
 
     $(".newsletter__subscribe").validate({
-            errorClass: "invalid-subscribe",
-            rules: {
-                subscribe: {
-                    required: true,
-                    email: true
-                }
-            },
-            messages: {
-                subscribe: {
-                    required: "Please enter your Email",
-                    email: "Your email address must be in the format of name@domain.com"
-                }
+        errorClass: "invalid-subscribe",
+        rules: {
+            subscribe: {
+                required: true,
+                email: true
             }
-        });
-    
+        },
+        messages: {
+            subscribe: {
+                required: "Please enter your Email",
+                email: "Format of Email is name@domain.com"
+            }
+        }
+    });
 
-        $('.phone').mask('+7 (000) 000 00 00', {placeholder: "+7 (___) ___ __ __"});
 
-        // Анимация Aos
+    $('.phone').mask('+7 (000) 000 00 00', { placeholder: "+7 (___) ___ __ __" });
 
-        AOS.init();
+    // Анимация Aos
+
+    AOS.init();
 
 });

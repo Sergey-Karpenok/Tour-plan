@@ -512,27 +512,29 @@
     </footer>
     <!-- /.footer -->
     <div class="modal">
-        <div class="modal__overlay"></div>
-        <!-- /.modal__overlay -->
-        <div class="modal__dialog-wrapper">
-            <div class="modal__dialog">
-                <a data-toggle="close" href="#" class="modal__close">
-                    <img src="img/close-button.svg" alt="Modal Button">
-                </a>
-                <h3 class="modal__title">Send us a message</h3>
-                <form action="send.php" method="POST" class="modal__contacts__form form">
-                    <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*">
-                    <input name="phone" type="text" class="input modal__input phone" placeholder="Phone Number*">
-                    <input name="email" type="text" class="input modal__input" placeholder="Email*">
-                    <textarea name="message" class="modal__message" placeholder="Message"></textarea>
-                    <div class="modal__contacts-wrapper">
-                        <button class="button modal__button" type="submit">Send</button>
-                        <span class="modal__info">* Required Fields</span>
-                    </div>
-                </form>
+        <div class="modal__overlay">
+            <div class="modal__dialog-wrapper">
+                <div class="modal__dialog">
+                    <a data-toggle="close" href="#" class="modal__close">
+                        <img src="img/close-button.svg" alt="Modal Button">
+                    </a>
+                    <h3 class="modal__title">Send us a message</h3>
+                    <form action="send.php" method="POST" class="modal__contacts__form form">
+                        <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*">
+                        <input name="phone" type="text" class="input modal__input phone" placeholder="Phone Number*">
+                        <input name="email" type="text" class="input modal__input" placeholder="Email*">
+                        <textarea name="message" class="modal__message" placeholder="Message"></textarea>
+                        <div class="modal__contacts-wrapper">
+                            <button class="button modal__button" type="submit">Send</button>
+                            <span class="modal__info">* Required Fields</span>
+                        </div>
+                    </form>
+                </div>
             </div>
+            <!-- /.modal__dialog-wrapper -->
         </div>
-        <!-- /.modal__dialog-wrapper -->
+        <!-- /.modal__overlay -->
+
     </div>
     <!-- /.modal -->
     <script src="js/jquery-3.5.1.min.js"></script>
