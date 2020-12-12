@@ -2313,7 +2313,7 @@ template {
     margin-bottom: 10px;
   }
   .modal__title {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 16px;
   }
   .modal__close {
@@ -2382,8 +2382,7 @@ template {
     transform: scale(1.2);
   }
   .footer__link:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    color: red;
   }
   .icon:hover {
     fill: #EC1F46;
