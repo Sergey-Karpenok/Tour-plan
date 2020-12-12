@@ -16,6 +16,7 @@
     &__input
       &-wrapper
         flex-basis: 100%
+  
 @media ( max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -238,6 +239,7 @@
       font-weight: 300
       font-size: 24px
       line-height: 30px
+      margin-bottom: 37px
       &__strong
         font-weight: 600
         font-size: 30px
@@ -318,6 +320,7 @@
   .subscribe
     width: 100%
   .newsletter
+    background-image: url(../img/newsletter-small.jpg)
     padding: 76px 0 83px 0
     &__title
       margin: 0
@@ -421,6 +424,7 @@
     &__dialog
       padding: 20px
       max-width: 320px
+      width: 92%
     &__contacts-wrapper
       flex-direction: column
       align-items: flex-start
@@ -428,15 +432,13 @@
       order: -1
       margin-bottom: 15px
 
-@media (max-width: 568px) and (min-width: 566px)
+@media (max-width: 667px)
   .modal
     &__overlay
       overflow-x: scroll
     &__dialog
       max-width: 320px
       padding: 10px 20px
-      // margin-bottom: 10px
-      margin-top: 60px
     &__message
       height: 70px
       margin-top: 0
@@ -445,7 +447,7 @@
     &__input
       min-height: 30px
       margin: 0
-      margin-bottom: 10px
+      margin-bottom: 15px
     &__title
       margin-bottom: 15px
       font-size: 16px
@@ -461,35 +463,20 @@
     &__pay
       grid-row: 10
       margin-top: -85px
-@media (min-width: 665px) and (max-width: 667px)
-  .modal
-    &__overlay
-      overflow-x: scroll
-    &__dialog
-      max-width: 320px
-      padding: 10px 20px
-      // margin-bottom: 10px
-      margin-top: 60px
-    &__message
-      height: 70px
-      margin-top: 0
-      margin-bottom: 10px
-      padding: 15px
-    &__input
-      min-height: 30px
-      margin: 0
-      margin-bottom: 10px
-    &__title
-      margin-bottom: 10px
-      font-size: 16px
-    &__close
-      width: 12px
-      top: 10px
-      right: 10px
-    &__button
-      padding: 13px
-      width: 140px
-      height: 40px
+      justify-self: flex-start
+  #name-error
+    position: absolute
+    bottom: 0px
+    left: 5px
+  #phone-error
+    position: absolute
+    bottom: 0px
+    left: 5px
+  #email-error
+    position: absolute
+    bottom: 0px
+    left: 5px
+
 
 @media ( min-width: 992px )
   .button

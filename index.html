@@ -140,16 +140,16 @@
                             <img class="hotel-slider__image" src="img/slide1.jpg" alt="Slide">
                         </div>
                         <div class="swiper-slide hotel-slider__item">
-                            <img class="hotel-slider__image lazyload" data-src="img/slide2.jpg" alt="Slide">
+                            <img class="hotel-slider__image" data-src="img/slide2.jpg" alt="Slide" src="img/slide2.jpg">
                         </div>
                         <div class="swiper-slide hotel-slider__item">
-                            <img class="hotel-slider__image lazyload" data-src="img/slide3.jpg" alt="Slide">
+                            <img class="hotel-slider__image" data-src="img/slide3.jpg" alt="Slide" src="img/slide3.jpg">
                         </div>
                         <div class="swiper-slide hotel-slider__item">
-                            <img class="hotel-slider__image lazyload" data-src="img/slide4.jpg" alt="Slide">
+                            <img class="hotel-slider__image" data-src="img/slide4.jpg" alt="Slide" src="img/slide4.jpg">
                         </div>
                         <div class="swiper-slide hotel-slider__item">
-                            <img class="hotel-slider__image lazyload" data-src="img/slide5.jpg" alt="Slide">
+                            <img class="hotel-slider__image" data-src="img/slide5.jpg" alt="Slide" src="img/slide5.jpg">
                         </div>
                     </div>
                     <button class="hotel-slider__button hotel-slider__button--prev"></button>
@@ -521,11 +521,15 @@
                 </a>
                 <h3 class="modal__title">BOOKING</h3>
                 <form action="send.php" method="POST" class="modal__contacts__form form">
-                    <div class="modal__input--wrapper">
+                    <div class="modal__input-wrapper">
                         <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*">
                     </div>
-                    <input name="phone" type="text" class="input modal__input phone" placeholder="Phone Number*">
-                    <input name="email" type="text" class="input modal__input" placeholder="Email*">
+                    <div class="modal__input-wrapper">
+                        <input name="phone" type="text" class="input modal__input phone" placeholder="Phone Number*">
+                    </div>
+                    <div class="modal__input-wrapper">
+                        <input name="email" type="text" class="input modal__input" placeholder="Email*">
+                    </div>
                     <textarea name="message" class="modal__message" placeholder="Message"></textarea>
                     <div class="modal__contacts-wrapper">
                         <button class="button modal__button" type="submit">Send</button>
@@ -544,7 +548,6 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/aos.js"></script>
-    <script src="js/lazysizes.min.js" async></script>
     <script src="js/main.js"></script>
 </body>
 

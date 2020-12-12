@@ -1,5 +1,6 @@
 .modal
   &__overlay
+    display: block
     position: fixed
     top: 0
     left: 0
@@ -10,11 +11,10 @@
     visibility: hidden
     opacity: 0
     transition: opacity 0.5s
+    overflow: auto
   &__dialog
     position: relative
-    top: 50%
-    left: 50%
-    transform: translate( -50%, -50%)
+    margin: 10px auto
     width: 478px
     padding: 33px 88px
     background-color: $dark
@@ -61,6 +61,8 @@
     font-size: 12px
     line-height: 15px
     color: #333333
+    &-wrapper
+      position: relative
   &__message
     min-width: 100%
     height: 123px
@@ -94,3 +96,15 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+#name-error
+  position: absolute
+  bottom: -14px
+  left: 5px
+#phone-error
+  position: absolute
+  bottom: -14px
+  left: 5px
+#email-error
+  position: absolute
+  bottom: -14px
+  left: 5px

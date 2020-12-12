@@ -101,15 +101,15 @@ $(document).ready(function() {
                 },
                 phone: {
                     require: "Please enter your phone",
-                    minlength: "The phone must match the format +7 (999) 999-99-99"
+                    minlength: "The phone must be +7 (999) 999-99-99"
                 },
                 email: {
                     required: "Please enter your Email",
-                    email: "Your email address must be in the format of name@domain.com"
+                    email: "Email address must be name@domain.com"
                 },
                 subscribe: {
                     required: "Please enter your Email",
-                    email: "Your email address must be in the format of name@domain.com"
+                    email: "Email address must be name@domain.com"
                 }
             }
         });

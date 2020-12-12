@@ -81,18 +81,6 @@ img {
   margin-top: 5px;
 }
 
-#name-error {
-  position: absolute;
-  bottom: -15px;
-  left: 5px;
-}
-
-#phone-error {
-  position: absolute;
-  bottom: -15px;
-  right: 78px;
-}
-
 .invalid-subscribe {
   color: #EC1F46;
   font-size: 12px;
@@ -767,7 +755,7 @@ template {
 .hotel-link--back {
   position: absolute;
   top: 330px;
-  padding: 18px 65px;
+  padding: 10px 40px;
   background-color: #EC1F46;
   border: none;
   cursor: pointer;
@@ -1567,6 +1555,7 @@ template {
 }
 
 .modal__overlay {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -1578,14 +1567,12 @@ template {
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  overflow: auto;
 }
 
 .modal__dialog {
   position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin: 10px auto;
   width: 478px;
   padding: 33px 88px;
   background-color: #0A223D;
@@ -1657,6 +1644,10 @@ template {
   color: #333333;
 }
 
+.modal__input-wrapper {
+  position: relative;
+}
+
 .modal__message {
   min-width: 100%;
   height: 123px;
@@ -1694,6 +1685,24 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+
+#name-error {
+  position: absolute;
+  bottom: -14px;
+  left: 5px;
+}
+
+#phone-error {
+  position: absolute;
+  bottom: -14px;
+  left: 5px;
+}
+
+#email-error {
+  position: absolute;
+  bottom: -14px;
+  left: 5px;
 }
 
 @media (max-width: 1200px) {
@@ -2036,6 +2045,7 @@ template {
     font-weight: 300;
     font-size: 24px;
     line-height: 30px;
+    margin-bottom: 37px;
   }
   .newsletter-title__strong {
     font-weight: 600;
@@ -2155,6 +2165,7 @@ template {
     width: 100%;
   }
   .newsletter {
+    background-image: url(../img/newsletter-small.jpg);
     padding: 76px 0 83px 0;
   }
   .newsletter__title {
@@ -2312,6 +2323,7 @@ template {
   .modal__dialog {
     padding: 20px;
     max-width: 320px;
+    width: 92%;
   }
   .modal__contacts-wrapper {
     -webkit-box-orient: vertical;
@@ -2330,14 +2342,13 @@ template {
   }
 }
 
-@media (max-width: 568px) and (min-width: 566px) {
+@media (max-width: 667px) {
   .modal__overlay {
     overflow-x: scroll;
   }
   .modal__dialog {
     max-width: 320px;
     padding: 10px 20px;
-    margin-top: 60px;
   }
   .modal__message {
     height: 70px;
@@ -2348,7 +2359,7 @@ template {
   .modal__input {
     min-height: 30px;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .modal__title {
     margin-bottom: 15px;
@@ -2368,42 +2379,22 @@ template {
     -ms-grid-row: 10;
     grid-row: 10;
     margin-top: -85px;
+    justify-self: flex-start;
   }
-}
-
-@media (min-width: 665px) and (max-width: 667px) {
-  .modal__overlay {
-    overflow-x: scroll;
+  #name-error {
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
   }
-  .modal__dialog {
-    max-width: 320px;
-    padding: 10px 20px;
-    margin-top: 60px;
+  #phone-error {
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
   }
-  .modal__message {
-    height: 70px;
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding: 15px;
-  }
-  .modal__input {
-    min-height: 30px;
-    margin: 0;
-    margin-bottom: 10px;
-  }
-  .modal__title {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  .modal__close {
-    width: 12px;
-    top: 10px;
-    right: 10px;
-  }
-  .modal__button {
-    padding: 13px;
-    width: 140px;
-    height: 40px;
+  #email-error {
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
   }
 }
 
