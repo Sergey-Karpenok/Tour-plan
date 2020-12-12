@@ -293,6 +293,8 @@
     &__pay
       grid-column: span 2
 @media ( max-width: 480px )
+  .container
+    width: 90%
   .navbar
     &-top
       height: 78px
@@ -380,6 +382,11 @@
     &__icon
       &-wrapper
         min-width: 30px
+    &__input
+      width: 90%
+    &__message
+      width: 90%
+      flex-basis: 90%
 
     &__contacts
       &-wrapper
@@ -388,7 +395,7 @@
         grid-column: 1
         grid-row: 6
         padding-right: 20px
-        margin-top: 25px
+        margin-top: 5px
       &-form
         grid-column: 1
         grid-row: 7 / 8
@@ -420,7 +427,8 @@
     &__info
       order: -1
       margin-bottom: 15px
-@media (max-width: 576px)
+
+@media (max-width: 568px) and (min-width: 566px)
   .modal
     &__overlay
       overflow-x: scroll
@@ -449,7 +457,11 @@
       padding: 13px
       width: 140px
       height: 40px
-@media (min-width: 730px) and (max-width: 756px)
+  .footer
+    &__pay
+      grid-row: 10
+      margin-top: -85px
+@media (min-width: 665px) and (max-width: 667px)
   .modal
     &__overlay
       overflow-x: scroll
