@@ -47,7 +47,7 @@ $(document).ready(function() {
     var modalClose = $("[data-toggle=close]");
 
     modalButton.on('click', function() {
-        console.log('вы кликнулми по кнопке');
+        
         var modalOverlay = $(".modal__overlay");
         var modalDialog = $(".modal__dialog");
 
@@ -57,7 +57,6 @@ $(document).ready(function() {
     });
 
     modalClose.on('click', function() {
-        console.log('вы кликнулми по кнопке');
         $(".modal__overlay").removeClass("modal--visible");
         $(".modal__dialog").removeClass("modal--visible");
     });
